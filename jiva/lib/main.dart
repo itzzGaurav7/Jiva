@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/signin',
+      initialRoute: '/home',
       routes: {
         '/nav': (context) => ResponsiveNavBarPage(),
         '/home': (context) => Homepage(),
