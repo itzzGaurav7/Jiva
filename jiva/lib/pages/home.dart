@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jiva/pages/Profile_page.dart';
+import 'package:jiva/pages/profile_page.dart';
 import 'package:jiva/pages/fit_page.dart';
 import 'package:jiva/pages/homebody.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
