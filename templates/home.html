@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--From https://codepen.io/frytyler/pen/EGdtg-->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta charset="UTF-8" />
+    <title>ML API</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arimo"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Hind:300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="heart_disease\static\css\style.css" />
+  </head>
+
+  <body>
+    <div class="login">
+      <h1>Checking if a person has diabetes or not</h1>
+
+      <!-- Main Input For Receiving Query to our ML -->
+      <form action="/predict" method="post">
+        <input
+          type="int"
+          name="interview_score3"
+          placeholder="Age"
+          required="required"
+        /><br />
+        <input
+          type="int"
+          name="experience"
+          placeholder="Gender_Female"
+          required="required"
+        /><br />
+        <input
+          type="int"
+          name="test_score"
+          placeholder="Gender_Male"
+          required="required"
+        /><br />
+        <input
+          type="int"
+          name="interview_score5"
+          placeholder="Polyuria_NO"
+          required="required"
+        /><br />
+        <input
+          type="int"
+          name="interview_score4"
+          placeholder="Polyuria_Yes"
+          required="required"
+        /><br />
+        <input
+          type="int"
+          name="interview_score4"
+          placeholder="Polydipsia_No"
+          required="required"
+        /><br />
+        <input
+          type="int"
+          name="interview_score5"
+          placeholder="Polydipsia_Yes"
+          required="required"
+        /><br />
+        <input
+          type="int"
+          name="interview_score6"
+          placeholder="suddenweighloss_NO"
+          required="required"
+        /><br />
+        <input
+          type="int"
+          placeholder="suddenweighloss_YES"
+          required="required"
+        /><br />
+        <input type="int" placeholder="weakness_NO" required="required" /><br />
+        <input
+          type="int"
+          placeholder="weakness_YES"
+          required="required"
+        /><br />
+        <input
+          type="int"
+          placeholder="Polyphagia_No"
+          required="required"
+        /><br />
+        <input
+          type="int"
+          placeholder="Polyphagia_Yes"
+          required="required"
+        /><br />
+
+        <input
+          type="int"
+          placeholder="Genitalthrush_No"
+          required="required"
+        /><br />
+        <input
+          type="int"
+          placeholder="Genitalthrush_Yes"
+          required="required"
+        /><br />
+        <input
+          type="int"
+          placeholder="visualblurring_No"
+          required="required"
+        /><br />
+        <input
+          type="int"
+          placeholder="visualblurring_Yes"
+          required="required"
+        /><br />
+        <input type="int" placeholder="Icthing_No" required="required" /><br />
+        <input type="int" placeholder="Itching_Yes" required="required" /><br />
+        <input
+          type="int"
+          placeholder="Irritability_No"
+          required="required"
+        /><br />
+        <input
+          type="int"
+          placeholder="Irritability_Yes"
+          required="required"
+        /><br />
+        <input
+          type="int"
+          placeholder="delayedhealing_No"
+          required="required"
+        /><br />
+        <input
+          type="int"
+          placeholder="delayedhealing_Yes"
+          required="required"
+        /><br />
+        <input
+          type="int"
+          placeholder="partialparesis_No"
+          required="required"
+        /><br />
+        <input
+          type="int"
+          placeholder="partialparesis_Yes"
+          required="required"
+        /><br />
+        <input
+          type="int"
+          placeholder="musclestiffness_No"
+          required="required"
+        /><br />
+        <input
+          type="int"
+          placeholder="musclestiffness_Yes"
+          required="required"
+        /><br />
+        <input type="int" placeholder="Alopecia_No" required="required" /><br />
+        <input
+          type="int"
+          placeholder="Alopecia_Yes"
+          required="required"
+        /><br />
+        <input type="int" placeholder="Obesity_No" required="required" /><br />
+        <input type="int" placeholder="Obesity_Yes" required="required" /><br />
+        <button type="submit" class="btn btn-primary btn-block btn-large">
+          Predict
+        </button>
+      </form>
+
+      <br />
+      <br />
+    </div>
+    {{prediction_text}}
+  </body>
+</html>
